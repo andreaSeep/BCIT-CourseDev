@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+#CCCDCF - brown
+#ABDCD6 - Green
+#76CDD8 - teal
+#54849A - blue 
+*/
+
+#main{
+	overflow:hidden;
+	height:800px; 
+	position:relative;
+	background-color:#F5F5F5;
+	}
+.main-box{
+	height:400px;
+	font-size:20px;
+	}
+.main-box #l1-a {
+	height:400px;
+	background-color:#ABDCD6;/* Teal*/
+	}
+.main-box #l1-b {
+	background-color:#E9ACB2;	
+	height:400px;	
+	}
+.main-box #l2-a {
+	background-color:#B2E9AC;
+	height:400px;	
+	}
+.main-box #l2-b {	
+	height:400px;
+	background-color:#ABDCD6;	
+	}
+
+.inner{
+	margin-top:20%;
+	height:60px;
+	font-size:20px;	
+	padding:2% 3%;
+	text-align:center;
+	border-radius:4px;
+	}
+.l1-a-inner,
+.l2-b-inner{
+	background-color:#54849A; 
+	color:#CCCDCF;
+	border:2px solid #f5f5f5;
+	}
+	
+.l1-b-inner, 
+.l2-a-inner{
+	background-color:#ACD1E9; 
+	color:#54849A;
+	border:2px solid #f5f5f5;	
+	}
+
+#l1-a .l1-a-inner:hover, #l2-b .l2-b-inner:hover{
+	color:#F5f5f5;
+	}
+#l1-b .l1-b-inner:hover, 
+#l2-a .l2-a-inner:hover{
+	color:#F5f5f5;
+	}
+	
+/* Water Drop Animate(*/
+#anim-l1-b{
+  opacity:0.2;
+  /*transition:opacity 1s linear;**/
+}
+#anim-l1-b:hover{
+	/*opacity:1;*/
+	}	
+
+/* Content Styling*/
+#l1-content{position:absolute;top: 900px;}
+.c1{border-radius:4px; background-color:#F5FAFA;}
+.c1 .close{
+	margin-top:1%;
+	color:#C03;
+	}
+.c1 .close:hover{
+	color:#F03;
+	}
+.move{
+	transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+	}
+
+/* MENU CONTAINER STYLES */
+
+/*Responsive Styles*/
+	/*** Large Screens ***/
+@media (min-width: 1200px)
+{
+#main{
+	height:800px;
+	position:relative; 
+	}
+.inner{
+	margin-top:20%;
+	height:60px;
+	font-size:20px;	
+	padding:2% 3%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px)
+{
+#main{
+	height:800px;
+	overflow:hidden; 
+	}
+.inner{
+	margin-top:30%;
+	height:60px;
+	font-size:20px;	
+	padding:2% 2%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+{
+#main{
+	height:800px;
+	overflow:hidden; 
+	position:relative;
+	}
+.inner{
+	margin-top:30%;
+	height:60px;
+	font-size:20px;	
+	padding:2% 2%;	
+	}
+
+.main-box #l1-a, 
+.main-box #l2-a{
+	font-size:20px;
+	}
+}
+@media (min-width: 300px) and (max-width: 768px)
+{
+#main{
+	height:800px;
+	overflow:hidden; 
+	position:relative;
+}
+.main-box{
+	height:400px;
+	}
+.inner{
+	margin-top:8%;
+	height:60px;
+	font-size:20px;	
+	padding:2% 2%;
+	
+	}
+.main-box #l1-a, 
+.main-box #l2-a,
+.main-box #l1-b {
+	height:200px;
+	font-size:20px;
+	}	
+	
+}
+@media print{
+	
+#main{
+	height:800px; 
+	position:relative;
+	}
+.main-box #l1-a {
+	height:50px;
+	}
+.main-box #l1-b {
+	
+	height:50px;	
+	}
+.main-box #l2-a {
+	height:50px;	
+	}
+.main-box #l2-b {	
+	height:50px;
+	}
+.inner{
+	height:60px;
+	font-size:12px;	
+	padding:2% 3%;
+	text-align:center;
+	border-radius:4px;
+	}
+
+.l1-b-inner, 
+.l2-a-inner{
+	background-color:#ACD1E9; 
+	color:#54849A;
+	border:2px solid #f5f5f5;	
+	}
+
+/* Water Drop Animate(*/
+#anim-l1-b{
+  display:none;
+  /*transition:opacity 1s linear;**/
+}
+
+/* Content Styling*/
+#l1-content{
+	position:absolute;
+	top: 300px;
+	display:block;
+}
+.c1{border-radius:4px;}
+.c1 .close{
+	margin-top:1%;
+	color:#C03;
+	}
+.c1 .close:hover{
+	color:#F03;
+	}
+	
+}
